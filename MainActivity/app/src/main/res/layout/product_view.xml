@@ -8,7 +8,8 @@
         android:id="@+id/product_img"
         android:layout_width="72dp"
         android:layout_height="72dp"
-        android:src="@drawable/caramelfrap"/>
+        android:src="@drawable/caramelfrap"
+        android:padding="5dp"/>
     
     <LinearLayout
         android:layout_width="wrap_content"
@@ -19,7 +20,10 @@
             android:id="@+id/product_nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Caramel Frap"/>
+            android:text="Caramel Frap"
+            android:textSize="25dp"
+            android:textColor="@color/accent_pink"
+            />
 
         <TextView
             android:id="@+id/product_desc"
@@ -35,6 +39,8 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:text="$5.00"
+        android:textSize="25dp"
+        android:textColor="@color/accent_pink"
         />
 
 

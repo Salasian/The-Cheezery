@@ -23,8 +23,14 @@ class ProductsActivity : AppCompatActivity() {
         agregaProductos()
         var listView:ListView = findViewById<ListView>(R.id.listview)
         val id=intent.getStringExtra("key")
-        print(id)
-        var adaptador : AdaptadorProductos = AdaptadorProductos(this,coldDrinks)
+        var drinks=ArrayList<Product>()
+        when(id!!){
+            "cold"->drinks = coldDrinks
+            "hot"->drinks =hotDrinks
+            "salt"->drinks =salties
+            "sweet"->drinks =sweets
+        }
+        var adaptador : AdaptadorProductos = AdaptadorProductos(this,drinks)
         listView.adapter = adaptador
 
     }

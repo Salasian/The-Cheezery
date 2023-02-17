@@ -24,15 +24,17 @@ class MenuActivity : AppCompatActivity() {
         }
         btnHotDrinks.setOnClickListener {
             var intent:Intent = Intent(this@MenuActivity,ProductsActivity::class.java)
-            intent.putExtra("key",btnColdDrinks.id.toString())
+            intent.putExtra("key","hot")
             startActivity(intent)
         }
         btnSweets.setOnClickListener {
             var intent:Intent = Intent(this,ProductsActivity::class.java)
+            intent.putExtra("key","sweet")
             startActivity(intent)
         }
         btnSalties.setOnClickListener {
             var intent:Intent = Intent(this,ProductsActivity::class.java)
+            intent.putExtra("key","salt")
             startActivity(intent)
         }
         btnCombos.setOnClickListener {
